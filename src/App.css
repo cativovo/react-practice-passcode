@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 600px;
+}
+
+.input-display {
+  border: 1px solid #696969;
+  display: flex;
+  height: 1.5rem;
+  justify-content: center;
+  line-height: 1.8;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.input-display.error {
+  animation: shake 100ms linear 2;
+  border-color: red;
+}
+
+.numpad {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0;
+}
+
+.numpad > button {
+  padding: 15px 0;
+}
+
+.numpad > button:last-child {
+  grid-column: 2;
+}
